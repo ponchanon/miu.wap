@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Resources/css/layout.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="../Resources/Images/logo.jpeg" alt="Logo">
+        <span>Welcome, Ponchanon Datta Rone</span>
+        <button>Logout</button>
+    </div id="productList">
+    <div>
+        <p id="tableTitleProduct">Product List</p>
+        <table aria-describedby="tableTitleProduct">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>$9.99</td>
+                <td>8</td>
+                <td><img class="cartImage" src="../Resources/Images/cart.jpg" alt="Add"></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>$19.99</td>
+                <td>5</td>
+                <td><img src="../Resources/Images/cart.jpg" alt="Add"></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>$29.99</td>
+                <td>13</td>
+                <td><img src="../Resources/Images/cart.jpg" alt="Add"></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div id="cart">
+        <p id="tableTitleCart">Your Shopping Cart</p>
+        <table aria-describedby="tableTitleCart">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>$9.99</td>
+                <td>$9.99</td>
+                <td>-<input type="number" value="1">+</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>$29.99</td>
+                <td>$299.9</td>
+                <td>-<input type="number" value="10">+</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total : $300.98</td>
+            </tr>
+        </table>
+        <button>Logout</button>
+    </div>
+</body>
+
+</html>

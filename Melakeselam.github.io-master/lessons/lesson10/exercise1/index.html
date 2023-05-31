@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<!--
+	CSE 190 M, Summer 2012
+	Output Comparison Ajax example
+	-->
+
+	<head>
+		<title>Output Comparison Tool</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="./resources/scripts/output.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h1>CS472 Output Comparison Tool</h1>
+
+		<div>
+			<select id="lab">
+				<option value="" selected="selected">(choose an lab to display)</option>
+				<option value="lesson1/exercise4.html">Lab 1-4</option>
+				<option value="lesson1/exercise6.html">Lab 1-6</option>
+				<option value="lesson2/grannys_pies/resources/css/recipe.css">Lab 2-Granny's Pie - css</option>
+				<option value="lesson3/resources/css/movie.css">Lab 3-TMNT - css</option>
+				<option value="lesson4/index.html">Lab 4 - Online hopping checkout - html</option>
+				<option value="lesson4/resources/css/checkout.css">Lab 4 - Online hopping checkout - css</option>
+				<option value="lesson5/decoratemytext/resources/scripts/decoratemytext.js">Lab 5 - Decorate My Text - js</option>
+				<option value="lesson6/resources/scripts/ascii.js">Lab 6 - ASCII Animations - js</option>
+				<option value="lesson7/resources/scripts/accountGen.js">Lab 7 - Account Generator - js</option>
+				<option value="lesson8/resources/scripts/object-inheritance.js">Lab 8 - Object Inheritance - js</option>
+				<option value="lesson8/resources/scripts/class-inheritance.js">Lab 8 - Class Inheritance - js</option>
+				<option value="lesson9/puzzle/fifteen.js">Lab 9 - Puzzle - js</option>
+			</select>
+		</div>
+
+		<div>
+			<textarea id="output" rows="30" cols="80"></textarea>
+		</div>
+	</body>
+</html>

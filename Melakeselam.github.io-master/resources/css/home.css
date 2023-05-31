@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(218, 255, 170);
+}
+nav {
+    background-color: rgb(40, 67, 94);
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.menu_itm {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+[id*="sub_"]  {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+a {
+    color: lightgray;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+[id*="sub_"] li {
+    display: block;
+    margin: 3px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2px;
+    font-size: 0.7em;
+}
+
+[id*="sub_"] li:hover {
+    background-color: maroon;
+}
+

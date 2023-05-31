@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ShopRite Online Shopping Website</title>
+        <link rel="icon" href="./resources/images/icon_large.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./resources/css/checkout.css" type="text/css" />
+    </head>
+
+    <body>
+
+    <div id="content">
+
+        <img id="background" src="./resources/images/background_main.png" alt="content background"/>
+
+        <header>
+            <img id="logo" src="./resources/images/shopping_cart_gold.png" alt="golden cart logo"/>
+            <h1>SHOP RITE</h1>
+            <h2 class="blue_text">Online Shopping Center - Checkout Information</h2>
+        </header>
+
+        <section id="main">
+            <nav id="menu">
+                <ul class="blue_text">
+                    <li><a href="#personal_details">Personal Details</a></li>
+                    <li><a href="#billing_address">Billing Address</a></li>
+                    <li><a href="#shipping_address">Shipping Address</a></li>
+                    <li><a href="#payment_info">Payment Info</a></li>
+                    <li><a href="#checkout">Checkout</a></li>
+                </ul>
+            </nav>
+            <section id="view">
+
+                <div id="inner_logo">
+                    <img src="./resources/images/shopping_cart_blue.png" alt="big logo" />
+                </div>
+
+                <form method="POST" enctype="multipart/form-data" >
+
+                    <article id="login" class="form_section">
+
+                        <h1 class="dark_blue_text">Login</h1>
+
+                        <fieldset id="login_field">
+                            <legend>Enter Your Username and Password:<em class ="required">*</em></legend>
+                            <label class="light_text input_field_set">USER NAME:<em class ="required">*</em> <input type="text" name="username" required class="input_field"></label>
+                            <label class="light_text input_field_set">PASSWORD:<em class ="required">*</em> <input type="password" name="password" required class="input_field"></label>
+                        </fieldset>
+                    
+                        <footer class="control_buttons">
+                            <button class="center_btn" type="reset">RESET</button>
+                            <a href="#personal_details" class="right_btn">NEXT</a>
+                        </footer>
+
+                    </article>
+
+                    <article id="personal_details" class="form_section">
+
+                        <div class="cust_img">
+                            <img src="./resources/images/placeholder-profile-pic.png" alt="customer pic" />
+                            <p class="username_lbl light_text">User Name:</p>
+                            <p class="username_disp dark_blue_text">JOHNDOE123</p>
+                        </div>
+
+                        <h1 class="dark_blue_text">Personal Details</h1>
+
+                        <fieldset id="name" >
+                            <label class="light_text input_field_set">First Name:<em class ="required">*</em> <input type="text" name="first_name" size=30 required class="input_field"></label>
+                            <label class="light_text input_field_set">Middle Name: <input type="text" name="middle_name" size=30 class="input_field" ></label>
+                            <label class="light_text input_field_set">Last Name:<em class ="required">*</em> <input type="text" name="last_name" size=30 required class="input_field"></label>
+                        </fieldset>
+
+                        <fieldset id="pers_detail">
+                            <label class="light_text input_field_set">Date of Birth:<em class ="required">*</em> <input type="date" name="dob" size=20 required class="input_field"></label>
+                            <label class="light_text input_field_set">Nationality:<em class ="required">*</em> <input type="text" name="nationality" size=20 required class="input_field"></label><br>
+                            <label class="light_text input_field_set">Telephone:<em class ="required">*</em> <input type="text" name="telephone" size=15 pattern="\(\d{3}\)\s?\d{3}\-?\d{4}" placeholder="(XXX) XXX-XXXX" class="input_field"></label>
+                            <label class="light_text input_field_set" for="id_type">ID:<em class ="required">*</em>
+                                <select id="id_type" name="id_type" class="input_field">
+                                    <option value="Driving Licence">Driving Licence</option>
+                                    <option value="Social Security Number">Social Security Number</option>
+                                    <option value="Passport">Passport</option>
+                                </select>
+                            </label>
+                            <input type="file" name="id_file" size=20 required >
+                            
+                        </fieldset>
+                    
+                        <footer class="control_buttons">
+                            <a href="#login" class="left_btn"><span>PREV</span></a>
+                            <button class="center_btn" type="reset">RESET</button>
+                            <a href="#billing_address" class="right_btn">NEXT</a>
+                        </footer>
+
+                    </article>
+
+                    <article id="billing_address" class="form_section">
+
+                        <div class="cust_img">
+                            <img src="./resources/images/placeholder-profile-pic.png" alt="customer pic" />
+                            <p class="username_lbl light_text">User Name:</p>
+                            <p class="username_disp dark_blue_text">JOHNDOE123</p>
+                        </div>
+
+                        <h1 class="dark_blue_text">Billing Address</h1>
+
+                        <div class="name_disp" >
+                            <span class="light_text input_field_set">Customer Name: </span>
+                                <input type="text" class="disp_first_name disp_field" size=12 value="John" readonly >
+                                <input type="text" class="disp_middle_name disp_field" size=12 value="Marcus" readonly  >
+                                <input type="text" class="disp_last_name disp_field" size=12 value="Doe" readonly >
+
+                        </div>
+
+                        <div class="fields_box1">
+                            <label class="light_text input_field_set">Address Line 1:<em class ="required">*</em> <input type="text" name="address1" size=40 required class="input_field"></label>
+                            <label class="light_text input_field_set">Address 2: <input type="text" name="address2" size=40 class="input_field"></label><br>
+                        </div>
+                        <div class="fields_box2">    
+                            <label class="light_text input_field_set">City:<em class ="required">*</em> <input type="text" name="city" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">State:<em class ="required">*</em> <input type="text" name="state" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">Country:<em class ="required">*</em> <input type="text" name="country" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">Zip/Postal:<em class ="required">*</em> <input type="text" name="zip_postal" size=15  pattern="(\d{3}\-\d{2}\-\d{4})?" class="input_field"></label>
+                            <label class="light_text input_field_set">Email:<em class ="required">*</em> <input type="text" name="email" size=15  pattern="^\w[^\.\?\s&%\$\!]*@[a-zA-Z]{2,15}\.[a-zA-Z]{2,4}" class="input_field"></label>
+                        </div>
+                        
+
+                        <footer class="control_buttons">
+                            <a href="#personal_details" class="left_btn">PREV</a>
+                            <button class="center_btn" type="reset">RESET</button>
+                            <a href="#shipping_address" class="right_btn">NEXT</a>
+                        </footer>
+                    
+                    </article>
+
+                    <article id="shipping_address" class="form_section">
+
+                        <div class="cust_img">
+                            <img src="./resources/images/placeholder-profile-pic.png" alt="customer pic" />
+                            <p class="username_lbl light_text">User Name:</p>
+                            <p class="username_disp dark_blue_text">JOHNDOE123</p>
+                        </div>
+
+                        <h1 class="dark_blue_text">Shipping Address</h1>
+
+                        <div class="name_disp" >
+                            <span class="light_text input_field_set">Customer Name: </span>
+                                <input type="text" class="disp_first_name disp_field" size=12 value="John" readonly >
+                                <input type="text" class="disp_middle_name disp_field" size=12 value="Marcus" readonly >
+                                <input type="text" class="disp_last_name disp_field" size=12 value="Doe" readonly >
+                        </div>
+
+                        <div class="fields_box1">
+                            <label class="light_text input_field_set">Address Line 1:<em class ="required">*</em> <input type="text" name="address1" size=40 required class="input_field"></label>
+                            <label class="light_text input_field_set">Address 2: <input type="text" name="address2" size=40 class="input_field"></label><br>
+                        </div>
+                        <div class="fields_box2">    
+                            <label class="light_text input_field_set">City:<em class ="required">*</em> <input type="text" name="city" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">State:<em class ="required">*</em> <input type="text" name="state" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">Country:<em class ="required">*</em> <input type="text" name="country" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">Zip/Postal:<em class ="required">*</em> <input type="text" name="zip_postal" size=15  pattern="(\d{3}\-\d{2}\-\d{4})?" class="input_field"></label>
+                        </div>
+
+                        <footer class="control_buttons">
+                            <a href="#billing_address" class="left_btn">PREV</a>
+                            <button class="center_btn" type="reset">RESET</button>
+                            <a href="#payment_info" class="right_btn">NEXT</a>
+                        </footer>
+                    
+                    </article>
+
+                    <article id="payment_info" class="form_section">
+
+                        <div class="cust_img">
+                            <img src="./resources/images/placeholder-profile-pic.png" alt="customer pic" />
+                            <p class="username_lbl light_text">User Name:</p>
+                            <p class="username_disp dark_blue_text">JOHNDOE123</p>
+                        </div>
+
+                        <h1 class="dark_blue_text">Payment Information</h1>
+
+                        <div class="name_disp" >
+                            <span class="light_text input_field_set">Customer Name: </span>
+                                <input type="text" class="disp_first_name disp_field" size=12 value="John" readonly >
+                                <input type="text" class="disp_middle_name disp_field" size=12 value="Marcus" readonly >
+                                <input type="text" class="disp_last_name disp_field" size=12 value="Doe" readonly >
+                        </div>
+
+                        <div class="fields_box1">
+                            <label class="light_text input_field_set">Pay with:<em class ="required">*</em> 
+                                <select name="payment_mode" class="input_field">
+                                    <option value="Credit/Debit Card">Credit/Debit Card</option>
+                                    <option value="PayPal">PayPal</option>
+                                    <option value="Check">Check</option>
+                                </select>
+                            </label><br>
+                            <label class="light_text input_field_set">Card/Check# or PayPal Id:<em class ="required">*</em>  <input type="text" name="card_id_num" size=20 class="input_field"></label><br>
+                        </div>
+                        <div class="fields_box2">    
+                            <label class="light_text input_field_set">Name on Card:<em class ="required">*</em> <input type="text" name="name_on_card" size=15  class="input_field"></label>
+                            <label class="light_text input_field_set">Security Code:<em class ="required">*</em> <input type="text" name="security_code" size=15 pattern="\d{3}" class="input_field"></label>
+                            <label class="light_text input_field_set">Expiration Date:<em class ="required">*</em> <input type="date" name="exp_date1" size=15  class="input_field"></label>  /  <input type="date" name="exp_date2" size=15  class="input_field">
+                        </div>
+                        <fieldset id="save_card">
+                            <legend>Save this card?:<em class ="required">*</em></legend>
+                            <input type="radio" name="save_card" value="yes" checked="checked" />Yes
+                            <input type="radio" name="save_card" value="no" />No
+                        </fieldset>
+
+                        <footer class="control_buttons">
+                            <a href="#billing_address" class="left_btn">PREV</a>
+                            <button class="center_btn" type="reset">RESET</button>
+                            <a href="#checkout" class="right_btn">NEXT</a>
+                        </footer>
+                    
+                    </article>
+
+                    <article id="checkout" class="form_section">
+
+                        <div class="cust_img">
+                            <img src="./resources/images/placeholder-profile-pic.png" alt="customer pic" />
+                            <p class="username_lbl light_text">User Name:</p>
+                            <p class="username_disp dark_blue_text">JOHNDOE123</p>
+                        </div>
+
+                        <h1 class="dark_blue_text">Checkout</h1>
+
+                        <div class="name_disp" >
+                            <span class="light_text input_field_set">Customer Name: </span>
+                                <input type="text" class="disp_first_name disp_field" size=12 value="John" readonly >
+                                <input type="text" class="disp_middle_name disp_field" size=12 value="Marcus" readonly >
+                                <input type="text" class="disp_last_name disp_field" size=12 value="Doe" readonly >
+                        </div>
+
+                        <div class="fields_box1">
+                            <label class="light_text input_field_set">Pay with: 
+                                <input type="text" id="disp_payment_mode" readonly value="Credit/Debit Card" class="disp_field" />
+                            </label><br>
+                            <label class="light_text input_field_set">Card/Check# or PayPal Id:  <input type="text" id="disp_card_id_num" size=20 readonly value="1234567890" class="disp_field"></label><br>
+                        </div>
+                        <div class="fields_box2">
+                            <h3>TERMS AND CONDITIONS</h3>   
+                            <p id="terms_and_conditions">
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                                I, here by, agree that the information provided in this consecutive forms is accurate to the best of my knowledge and should be used to fulfill my purchase of the order list shown here.
+                            </p>
+                        </div>
+                        <fieldset id="terms_conditions">
+                            <legend>Terms and Conditions:<em class ="required">*</em></legend>
+                            <input type="checkbox" name="terms_cond" value="yes" />Accept
+                        </fieldset>
+
+                        <footer class="control_buttons">
+                            <a href="#payment_info" class="left_btn">PREV</a>
+                            <button class="center_btn" type="reset">RESET</button>
+                            <button class="right_btn" type="submit">SUBMIT</button>
+                        </footer>
+                    
+                    </article>
+                    
+                </form>
+                
+            </section>
+            
+        </section>
+
+    </div>
+    <div id="validators">
+        <a href="https://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Valid HTML5"></a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS"></a>
+    </div>
+    </body>
+
+</html>

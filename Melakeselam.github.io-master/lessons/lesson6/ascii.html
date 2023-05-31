@@ -1,0 +1,67 @@
+<!--
+Melakeselam Moges Mengistu (611124)
+CS472 Web Application Programming
+submission date: May 29, 2020
+
+Task: create an ASCII animator with controllers that affect the behavior of 
+the animation. The behaviour aspect is to be manipulated by javascript code
+on external file linked to the HTML page - creating a web application. Separation
+of concern is to be strictly followed by separating html, css and javascript 
+codes onto independent files linked by the html file.
+
+associated stylesheet: ascii.css, 
+associated javascript files: animations.js, ascii.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS472: ASCII Animation Viewer</title>
+    <link href="./resources/css/ascii.css" type="text/css" rel="stylesheet">
+    <script src="./resources/scripts/animations.js"></script>
+    <script src="./resources/scripts/ascii.js"></script>
+</head>
+<body>
+    <h1>CS472 ASCII Animation Viewer</h1>
+    <textarea name="animWindow" id="animWindow" ></textarea>
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button id="playStart">Start</button>
+        <button id="playStop">Stop</button>
+    </fieldset>
+    <fieldset>
+        <legend>Animation:</legend>
+        <select id="animation">
+            <option value="blank">Blank</option>
+            <option value="exercise">Exercise</option>
+            <option value="juggler">Juggler</option>
+            <option value="bike">Bike</option>
+            <option value="dive">Dive</option>
+            <option value="aliVsForman">Ali Vs Forman</option>
+            <option value="custom">Custom</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Size:</legend>
+        <select id="size">
+            <option value="7pt">Tiny</option>
+            <option value="10pt">Small</option>
+            <option value="12pt" selected>Medium</option>
+            <option value="16pt">Large</option>
+            <option value="24pt">Extra Large</option>
+            <option value="32pt">XXL</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Speed:</legend>
+        <label><input type="checkbox" id="speed">Turbo</label>
+    </fieldset>
+    <footer id="validators">
+        <a href="https://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Valid HTML5"></a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS"></a> <br>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+table {
+    border: 2px solid black;
+    border-color: black;
+}
+
+table th {
+    color: grey;
+    font-style: oblique;
+}
+
+table tr {
+    color: black;
+    font-style: normal;
+    border-bottom: 1px solid black;
+}
+
+div#header {
+    border: 2px solid #06F;;
+    
+}
+
+#header img {
+    width: 100px;
+}
+
+table img {
+    width: 20px;
+}

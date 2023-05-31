@@ -1,0 +1,46 @@
+<script>
+    class Person {
+        constructor(newName){
+            let name = newName;
+            let age;
+            let income = 8;
+            let pwd;
+
+            this.getName = function(){
+                return name;
+            }
+
+            this.setName = function(newName){
+                name = newName;
+            }
+
+            this.getAge = function(){
+                return age;
+            }
+
+            this.setAge = function(newAge){
+                age = newAge;
+            }
+
+            this.getIncome = function(){
+                return income;
+            }
+
+            this.setIncome = function(newIncome){
+                income += newIncome;
+            }
+
+        }
+    }
+
+    const melak = new Person("Melakeselam");
+    const alex = new Person("Alemyoh");
+    melak.setAge(40);
+    console.log(`Name: ${melak.getName()}, Age: ${melak.getAge()}`);
+    alert(melak.getIncome());
+    alex.setIncome(50);
+    alert(alex.getIncome());
+    melak.setIncome(50000);
+    melak.getIncome = 0;
+    console.log(melak.getIncome());
+</script>

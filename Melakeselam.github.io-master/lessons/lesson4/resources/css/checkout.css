@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
+body {
+    background-color: rgb(114,114,100);
+    font-family: Corbel, Geneva, Tahoma, sans-serif;
+}
+
+#content {
+    width: 1202px;
+    height:900px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/background_extend_inner.png");
+    background-repeat: repeat-y;
+}
+
+header, #content {
+    position: relative;
+}
+
+
+#background {
+    display: block;
+    position: absolute;
+    
+}
+
+
+#logo {
+    display: block;
+    float: left;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+header h1, header h2 {
+    display: inline-block;
+    width: 800px;
+    margin-left: 30px;    
+    margin-bottom: 0px;
+}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    color: rgb(210, 210, 210);
+    font-weight: normal;
+    text-shadow: 1px 2px rgb(110,116,122);
+}
+
+header h2 {
+    margin-top: 0px;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+#main::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#main {
+    position: relative;
+}
+
+#menu {
+    float: left;
+    max-width: 20%;
+    margin: 50px;
+    margin-top: 70px;
+}
+
+
+#menu li{
+
+    border: 1px solid rgb(65, 174, 189);
+    list-style-type: none;
+    padding: 5px;
+    margin: 30px;
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+    
+}
+
+ #menu a {
+     color: rgb(65, 174, 189);
+ }
+
+ #menu a:link {
+    text-decoration: none;
+ }
+
+ #menu li:hover {
+     background-color: khaki;
+ }
+
+#view {
+    height: 434px;
+    position: relative;
+    margin: 50px;
+    margin-top: 38px;
+    margin-right: 80px;
+    overflow: hidden;
+}
+
+fieldset {
+    padding: 13px;
+    text-align: right;
+}
+
+#login_field {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 25px;
+    padding: 15px;
+    top:120px;
+    right: 20px;
+}
+
+
+label {
+    font-size: 1.2em;
+    font-weight: normal;
+   
+}
+
+#name, #pers_detail {
+    border: none;
+    margin-top: 12px;
+}
+#name label{
+    display: block;
+}
+
+.input_field_set {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input_field {
+    color: rgb(250, 250, 250);
+    background-color: rgb(89, 89, 89);
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 0.8em;
+    margin-bottom: 7px;
+    height: 40px;
+}
+
+.disp_field {
+    display: inline-block;
+    color: rgb(89, 89, 89);
+    background-color: #00000000;
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 0.8em;
+     height: 40px;
+}
+
+.name_disp, .fields_box1, .fields_box2 {
+    margin: 0px;
+    margin-top: 3px;
+    text-align: right;
+    padding:7px;
+}
+
+[type="file"]{
+    display: inline-block;
+    width: 190px;
+    height: 40px;
+    vertical-align: 5px;
+    color: rgb(250, 250, 250);
+}
+
+#save_card, #terms_conditions{
+    border: 1px solid  rgb(89, 89, 89);
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 7px 25px;
+    width: 280px;
+    height: 70px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.control_buttons a {
+    display: block;
+    color: rgb(250, 250, 250);
+    
+}
+
+a[class="right_btn"], a[class="left_btn"] {
+    padding-top: 10px;
+}
+
+.control_buttons a:link{
+    text-decoration: none;
+}
+
+
+button:focus{
+    outline: 0px solid transparent;
+}
+
+.form_section {
+    margin: 0px;
+    height: 450px;
+    position: relative;
+}
+
+#view h1 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: right;
+    margin-right: 50px ;
+}
+
+#inner_logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#inner_logo img {
+    width: 250px;
+ 
+}
+
+.cust_img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.cust_img img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 12px; 
+}
+.cust_img p {
+    margin: 5px;
+    font-size: 20px;
+    z-index: 10;
+}
+
+#terms_and_conditions {
+    position: relative;
+    width: auto;
+    height: 75px;
+    text-align: left;
+}
+
+#checkout .fields_box1 {
+    padding: 13px;
+}
+
+#checkout .fields_box2 {
+    text-align: left;
+    padding: 13px;
+}
+
+.control_buttons {
+    position: absolute;
+    width: 265px;
+    height: 45px;
+    bottom: 16px;
+    right: 20px;
+}
+
+.left_btn {
+    background-color: rgb(89, 89, 89);
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    right: 142px;
+    bottom: 2px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.right_btn {
+    background-color: rgb(89, 89, 89);
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.center_btn {
+    color: rgb(250, 250, 250);
+    background-color: rgb(89, 89, 89);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(130, 130, 130);
+    z-index: 5;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    right: 82px;
+    bottom: 2px;
+}
+
+[class*="_btn"]:hover {
+    background-color: rgb(160, 160, 160);
+    border: 1pt solid rgb(89, 89, 89);
+}
+
+[type="submit"] {
+    color: rgb(48, 247, 48);
+}
+
+[type="submit"]:hover {
+    color: rgb(247, 48, 48);
+}
+
+.light_text {
+    color: rgb(250, 250, 250);
+}
+.blue_text {
+    color: rgb(65, 174, 189);
+}
+
+.dark_blue_text {
+    color: rgb(0, 80, 119);
+}
+
+.required {
+    color:red;
+}
+
+#validators {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}

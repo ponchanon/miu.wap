@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam2</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="action.js"></script>
+</head>
+<body>
+    <form id="contact_from" novalidate>
+        <label for="first_name">First Name:</label>
+        <input type="text" id = "first_name" name="first_name">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        <input type="button" id="btn_add" value="Add to contacts">
+        <span class="err_msg"></span>
+    </form>
+    <table id="contacts">
+        <caption>Table Caption: Address Book</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</body>
+</html>

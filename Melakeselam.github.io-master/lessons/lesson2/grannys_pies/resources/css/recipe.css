@@ -1,0 +1,74 @@
+/*
+Melakeselam Moges Mengistu (611124)
+CS472 Web Application Programming
+submission date: May 21, 2020
+
+Task: create a web page using html and css styling that mimics exactly
+a given food recipe page : Grandma's Lemon Meringue Pie, making sure it
+passes all html and css validation rules
+
+For this assignment, I have implemented the following extra features:
+1. Background
+2. Favicon
+*/
+
+body {
+    color: #404040;
+    background-color: white;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 0%;
+    background-image: url("/lessons/lesson2/grannys_pies/resources/images/silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+#piePicture {
+    width: 249;
+    height: 265;
+}
+
+a:link, a:visited, h1, h2 {
+    color: #A4A400;
+}
+
+h1, h2 {
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+pre {
+    font-family: monospace;
+    text-align: right;
+    padding-left: 0%;
+    margin-right: 750px;
+}
+
+span.majorStep {
+    font-weight: bold;
+}
+
+p.comments {
+    font-style: italic;
+    background-color: #FFFFA8;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0%;
+}

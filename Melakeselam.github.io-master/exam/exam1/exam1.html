@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./exam1.css" type="text/css" rel="stylesheet" />
+        <title>Exam 1</title>
+        <script src="exam2.js"></script>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href ="">Home</a></li>
+                <li><a href ="">About</a></li>
+                <li><a href ="">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <form id="inputForm" novalidate>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first_name" />
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last_name" />
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone_num" pattern="\(\d{3}\)\s?\d{3}\-\d{4}"/>
+                    <input type="submit" value="Add to contacts">
+                </form>
+            </article>
+            <table>
+                <caption>Table Caption: Address Book</caption>
+                <tr><th>First Name</th><th>Last Name</th><th>Phone</th></tr>
+                <tr><td>Melak</td><td>Moges</td><td>973</td></tr>
+            </table>
+            
+        </section>
+    </body>
+</html>

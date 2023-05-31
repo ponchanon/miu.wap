@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14pt;
+    box-sizing: border-box;
+}
+h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36pt;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    height: 60px;
+    padding-left: 3vw;
+}
+
+#team-object {
+    background-image: linear-gradient(to bottom right, rgb(125, 165, 155), rgb(0, 217, 255), rgb(0, 195, 255));
+}
+
+img {
+    position: absolute;
+    width: 15vw;
+    top: 20%;
+}
+
+#track1 {
+    border-top: 4px solid black;
+    border-bottom: 4px solid maroon;
+}
+
+#track2 {
+    border-bottom: 4px solid orange;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+}
+
+input {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+button, input {
+    vertical-align: top;
+}
+
+label {
+    vertical-align: middle;
+    margin-left: 1vw;
+}
+
+
+fieldset {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+}
+
+[id*="track"] {
+    position: relative;
+    background-image: linear-gradient(white, white, white, rgb(68, 68, 68));
+    height: 13vw;
+}

@@ -1,0 +1,80 @@
+* {
+    font-size: 1.7vw;
+}
+
+body {
+    margin: 3vw;
+    padding: 0.15vw;
+    font-size: 100%;
+    color: lightgray;
+    background-color: rgb(32, 47, 68);
+}
+
+h2 {
+    color: goldenrod;
+}
+
+h3 {
+    color:orange;
+
+    text-decoration: overline underline;
+    text-indent: 1.0em;
+}
+
+article#movies {
+    /*background-image: url("/images/movie_reels.png");*/
+    color: orange;
+}
+
+a{
+    color: yellowgreen;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    text-decoration: underline;
+}
+
+#title{
+    font-family: cursive;
+    font-size: 3em;
+    color: #ffc400;
+    text-shadow: -3px 3px rgb(28, 28, 44);
+}
+
+.courseList .code {
+    color: oldlace;
+    font-style: italic;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#moods img {
+    width: 200px;
+    height: 200px;
+}
+
+#neighbors ul {
+    list-style-type: square;
+}
+
+iframe {
+    width: 1280px;
+    height: 720px;
+    border-width: 0em;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+#movies dt {
+    color: #a3a097
+}
+
+#movies dd {
+    color: #7a766a
+}

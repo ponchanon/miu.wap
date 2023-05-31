@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+}
+
+input[type=text], input[type=tel], input[type=button] {
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type=button] {
+    background-color: maroon;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button{
+    color:red;
+    padding: 5px;
+}
+form {
+    background-color: lightcyan;
+    padding: 20px;
+    width: 100%;
+}
+
+table {
+    border-top: 2px solid red;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+table caption {
+    caption-side: bottom;
+    margin: auto;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.err_msg{
+    color:red;
+}
