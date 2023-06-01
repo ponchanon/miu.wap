@@ -1,0 +1,29 @@
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+body {
+    padding: 10px;
+}
+
+#profile,#body {
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 30%;
+    border: 1px solid black;
+    padding: 5px;
+    display: block;*/
+}
+
+#body ul {
+    text-align: left;
+}
+
+div a img {
+    width: 100px;
+    height: 33px;
+}
