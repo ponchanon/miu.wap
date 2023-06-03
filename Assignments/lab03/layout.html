@@ -64,13 +64,25 @@
             <div class="table-cell">Node.js</div>
             <div class="table-cell">$9.99</div>
             <div class="table-cell">$9.99</div>
-            <div class="table-cell">- <input type="text" value="1"> +</div>
+            <div class="table-cell">
+                <div class="quantity-input">
+                    <button class="quantity-btn decrement-btn" onclick="decrementQuantity()">-</button>
+                    <input type="text" class="quantity-field" value="10" min="1">
+                    <button class="quantity-btn increment-btn" onclick="incrementQuantity()">+</button>
+                  </div>    
+            </div>
         </div>
         <div class="table-row">
             <div class="table-cell">Angular</div>
             <div class="table-cell">$29.99</div>
             <div class="table-cell">$299.9</div>
-            <div class="table-cell">- <input type="text" value="10"> +</div>
+            <div class="table-cell table-cell-input">
+                <div class="quantity-input">
+                    <button class="quantity-btn decrement-btn" onclick="decrementQuantity()">-</button>
+                    <input type="text" class="quantity-field" value="1" min="1">
+                    <button class="quantity-btn increment-btn" onclick="incrementQuantity()">+</button>
+                  </div>
+            </div>
         </div>
         <div class="table-row table-last-row">
             <div class="table-cell table-cell-span-3">Total : $300.98</div>
