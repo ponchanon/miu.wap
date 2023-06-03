@@ -73,7 +73,7 @@
   }
 
   .table-cell-input {
-    size: 20px;
+    resize: 20px;
     width: 20px;
   }
 
