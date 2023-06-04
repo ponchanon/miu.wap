@@ -1,0 +1,83 @@
+.header_title {
+  background-color: #a2cbbc;
+  padding: 10px;
+}
+
+.register_link {
+  text-decoration: underline;
+}
+
+.mandatory_sign {
+  color: red;
+}
+
+.left-section{
+  width: 35%;
+  border: #0c0 1px solid;
+  float: left;
+}
+.right-section{
+  width: 35%;
+  border: #0c0 1px solid;
+  float: left;
+}
+
+
+.name_section {
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+
+.name_section-2 label {
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+
+.name_section label > span {
+  width: 100px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.name_section input.input-field,
+.name_section .select-field {
+  width: 48%;
+}
+.name_section input.input-field,
+.name_section .tel-number-field,
+.name_section2 .textarea-field,
+.name_section .select-field {
+  box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+  border-radius: 3px;
+  padding: 7px;
+  outline: none;
+}
+.name_section .input-field:focus,
+.name_section .tel-number-field:focus,
+.name_section .textarea-field:focus,
+.name_section .select-field:focus {
+  border: 1px solid #0c0;
+}
+.name_section .textarea-field {
+  height: 100px;
+  width: 55%;
+}
+.name_section input[type="submit"],
+.name_section input[type="button"] {
+  border: none;
+  padding: 8px 15px 8px 15px;
+  background: #ff8500;
+  color: #fff;
+  box-shadow: 1px 1px 4px #dadada;
+  border-radius: 3px;
+}
+.name_section input[type="submit"]:hover,
+.name_section input[type="button"]:hover {
+  background: #ea7b00;
+  color: #fff;
+}

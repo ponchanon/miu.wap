@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="../Resources/css/form.css" type="text/css" rel="stylesheet" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header_title">Workshop Registration</h1>
+      <div></div>
+    </header>
+    <a class="register_link">Register now while seats are available!</a>
+    <div class="form_section">
+      <form action="/action_page.php" method="get/post" novalidate>
+        <div class="left-section">
+          <div class="name_section">
+            <label for="fname"
+              ><span>First name <span class="mandatory_sign">*</span></span>
+            </label>
+            <input
+              class="input-field"
+              type="text"
+              id="fname"
+              name="fname"
+              size="30"
+              maxlength="15"
+            />
+          </div>
+          <div class="name_section">
+            <label for="lname"
+              ><span>Last name <span class="mandatory_sign">*</span></span>
+            </label>
+            <input class="input-field" type="text" id="lname" name="lname" />
+          </div>
+          <div class="name_section">
+            <label for="company"
+              ><span
+                >Company/Institute <span class="mandatory_sign">*</span></span
+              >
+            </label>
+            <input
+              class="input-field"
+              type="text"
+              id="company"
+              name="company"
+            />
+          </div>
+          <div class="name_section">
+            <label for="address"
+              ><span>Address <span class="mandatory_sign">*</span></span>
+            </label>
+            <textarea
+              type="text"
+              id="address"
+              name="address"
+              rows="4"
+              cols="20"
+              class="textarea-field"
+            ></textarea>
+          </div>
+          <div class="name_section">
+            <label for="city"><span>City</span></label>
+            <input class="input-field" type="text" id="city" name="city" />
+          </div>
+          <div class="name_section">
+            <label for="states"><span>State/Province/Region</span></label>
+            <select name="state" id="states" class="select-field">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="name_section">
+            <label for="countries"><span>Country</span></label>
+            <select name="country" id="countries" class="select-field">
+              <option value="bangladesh">Bangladesh</option>
+              <option value="india">India</option>
+              <option value="china">China</option>
+              <option value="usa">Usa</option>
+              <option value="canada">Canada</option>
+            </select>
+          </div>
+          <div class="name_section">
+            <label for="email"
+              ><span>Email <span class="mandatory_sign">*</span></span>
+            </label>
+            <input class="input-field" type="email" id="email" name="email" />
+          </div>
+          <div class="name_section">
+            <label for="phone"
+              ><span>Phone Number <span class="mandatory_sign">*</span></span>
+            </label>
+            <input class="input-field" type="number" id="phone" name="phone" />
+          </div>
+        </div>
+        <div class="right-section"></div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
