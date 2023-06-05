@@ -1,63 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="../Resources/css/form.css" type="text/css" rel="stylesheet" />
-    <title>HTML Form</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../Resources/css/form.css" type="text/css" rel="stylesheet" />
+  <title>HTML Form</title>
+</head>
+
+<body>
+  <div class="mainBlock">
     <header>
       <h1 class="header_title">Workshop Registration</h1>
-      <div></div>
     </header>
-    <a class="register_link">Register now while seats are available!</a>
-    <div class="form_section">
-      <form action="/action_page.php" method="get/post" novalidate>
-        <div class="left-section">
+    <div class="formBodyTop">
+      <p class="register_link">Register now while seats are available!</p>
+    </div>
+    <form action="" method="get" >
+      <div class="formBody">
+        <div class="formBodyLeft">
           <div class="name_section">
-            <label for="fname"
-              ><span>First name <span class="mandatory_sign">*</span></span>
+            <label for="fname">
+              <span>First name <span class="mandatory_sign">*</span></span>
             </label>
-            <input
-              class="input-field"
-              type="text"
-              id="fname"
-              name="fname"
-              size="30"
-              maxlength="15"
-            />
+            <input class="input-field" type="text" name="fname" />
           </div>
           <div class="name_section">
-            <label for="lname"
-              ><span>Last name <span class="mandatory_sign">*</span></span>
+            <label for="lname"><span>Last name <span class="mandatory_sign">*</span></span>
             </label>
-            <input class="input-field" type="text" id="lname" name="lname" />
+            <input class="input-field" type="text" name="lname" />
           </div>
           <div class="name_section">
-            <label for="company"
-              ><span
-                >Company/Institute <span class="mandatory_sign">*</span></span
-              >
-            </label>
-            <input
-              class="input-field"
-              type="text"
-              id="company"
-              name="company"
-            />
+            <label for="company"><span>Company / Institute <span class="mandatory_sign">*</span></span></label>
+            <input class="input-field" type="text" name="company" />
           </div>
           <div class="name_section">
-            <label for="address"
-              ><span>Address <span class="mandatory_sign">*</span></span>
+            <label for="address"><span>Address <span class="mandatory_sign">*</span></span>
             </label>
-            <textarea
-              type="text"
-              id="address"
-              name="address"
-              rows="4"
-              cols="20"
-              class="textarea-field"
-            ></textarea>
+            <textarea type="text" id="address" name="address" rows="3" cols="20" class="textarea-field"></textarea>
           </div>
           <div class="name_section">
             <label for="city"><span>City</span></label>
@@ -66,40 +47,84 @@
           <div class="name_section">
             <label for="states"><span>State/Province/Region</span></label>
             <select name="state" id="states" class="select-field">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
+              <option value="IA">Iowa</option>
+              <option value="NY">New York</option>
+              <option value="IL">Illinois</option>
+              <option value="TA">Tennessee</option>
             </select>
           </div>
           <div class="name_section">
             <label for="countries"><span>Country</span></label>
             <select name="country" id="countries" class="select-field">
+              <option value="usa">USA</option>
               <option value="bangladesh">Bangladesh</option>
               <option value="india">India</option>
               <option value="china">China</option>
-              <option value="usa">Usa</option>
               <option value="canada">Canada</option>
             </select>
           </div>
           <div class="name_section">
-            <label for="email"
-              ><span>Email <span class="mandatory_sign">*</span></span>
+            <label for="email"><span>Email <span class="mandatory_sign">*</span></span>
             </label>
-            <input class="input-field" type="email" id="email" name="email" />
+            <input class="input-field" type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"/>
           </div>
           <div class="name_section">
-            <label for="phone"
-              ><span>Phone Number <span class="mandatory_sign">*</span></span>
+            <label for="phone"><span>Phone Number <span class="mandatory_sign">*</span></span>
             </label>
-            <input class="input-field" type="number" id="phone" name="phone" />
+            <input class="input-field" type="tel" name="phone" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" />
           </div>
         </div>
-        <div class="right-section"></div>
-        <div>
-          <button type="submit">Submit</button>
+        <div class="formBodyRight">
+          <fieldset class="fieldSetGroup">
+            <legend>Lunch:</legend>
+            <div class="name_section">
+              <label for="meals"><span>Meal Preference</span></label>
+              <select name="meal" id="meals" class="select-field">
+                <option value="rice">Rice</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="tea">Tea</option>
+                <option value="coffee">Coffee</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="fieldSetGroup">
+            <legend>Payment Details:</legend>
+            <div class="name_section">
+              <label for="payment"><span>Payment Mode</span></label>
+              <aside class="radio-group">
+                <input type="radio" name="payment_mode" value="cash" />Cash
+                <input type="radio" name="payment_mode" value="cheque" />Cheque
+                <input type="radio" name="payment_mode" value="demand_draft" />Demand Draft
+              </aside>
+            </div>
+            <div class="name_section">
+              <label for="cheque"><span>DD / Cheque No.</span></label>
+              <input class="input-field" type="text" name="ddChequeNo" />
+            </div>
+            <div class="name_section">
+              <label for="bankName"><span>Drawn On(Bank Name)</span></label>
+              <input class="input-field" type="text" name="bankName" />
+            </div>
+            <div class="name_section">
+              <label for="payable"><span>Payable at</span></label>
+              <input class="input-field" type="text" id="payable" name="city" />
+            </div>
+          </fieldset>
+          <br>
+          <div class="button_groups">
+            <div class="submit_reset_button">
+              <button class="submit_button" type="submit">Submit</button>
+            </div>
+            <div class="submit_reset__button">
+              <button class="reset_button" type="reset">Reset</button>
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
-  </body>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
+
+
+<!-- fname=First&lname=Last&company=MIU&address=123&city=Fairfield&state=opel&country=usa&email=ponchanondatta.rone%40gmail.com&phone=16412339909&meal=volvo&payment_mode=cash&city=1111&city=MW&city=IOWA -->

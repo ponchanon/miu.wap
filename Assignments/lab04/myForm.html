@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="../Resources/css/myForm.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Workshop Registration</h2>
+        <select class="headerdropDown">
+            <option>More Action</option>
+            <option>Test1</option>
+            <option>Test2</option>
+            <option>Test3</option>
+        </select>
+    </header>
+    <hr>
+
+
+    <form action="#" method="get">
+        <div class="main">
+            <div id="leftDivContent">
+                <p><u>Register now while seats are available!</u></p>
+                <div class="input_item">
+                    <label for="fName">First Name*</label>
+                    <input type="text" id="fName" name="firstName" pattern="[A-Za-z]">
+
+                </div>
+                <div class="input_item">
+                    <label for="lName">Last Name*</label>
+                    <input type="text" id="lName" name="lastName" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item">
+                    <label for="comInst">Company/Institution*</label>
+                    <input type="text" id="comInst" name="companyInstitution" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item" id="addressText">
+                    <label for="address">Address*</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+                <div class="input_item">
+                    <label for="comInst">City</label>
+                    <input type="text" id="city" name="city" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item">
+                    <label for="state_prov">State / Province</label>
+                    <select name="cars" id="state_prov">
+                        <option value="">Select State</option>
+                        <option value="volvo">New York</option>
+                        <option value="saab">Iowa</option>
+                        <option value="mercedes">Texas</option>
+                        <option value="audi">Florida</option>
+                    </select>
+                </div>
+                <div class="input_item">
+                    <label for="country_name">Country</label>
+                    <select name="cars" id="country_name">
+                        <option value="">Select Country</option>
+                        <option value="audi">USA</option>
+                        <option value="volvo">Bangladesh</option>
+                        <option value="saab">Canada</option>
+                        <option value="mercedes">Nepal</option>
+                    </select>
+                </div>
+                <div class="input_item">
+                    <label for="email_add">Email</label>
+                    <input type="text" id="email_add" name="email" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item">
+                    <label for="phone_no">Phone Number *</label>
+                    <input type="text" id="phone_no" name="phoneNo" pattern="[A-Za-z]">
+                </div>
+            </div>
+            <div id="rightDivContent">
+                <p><u>Lunch</u></p>
+                <div class="input_item">
+                    <label for="meal_prefer">Meal Preference</label>
+                    <select name="preferenceMeal" id="meal_prefer">
+                        <option value="">Select Meal</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Pescatarian">Pescatarian</option>
+                        <option value="Flexitarian">Flexitarian</option>
+                        <option value="Macrobiotic">Macrobiotic</option>
+                    </select>
+                </div>
+                <p><u>Payment Details</u></p>
+                <div class="input_item" id="div_check">
+                    <label for="lName">Payment Mode</label>
+                    <div class="div_checkbox">
+                        <input type="checkbox" id="cash" name="cash_payment">
+                        <label for="cash"> Cash</label><br>
+                        <input type="checkbox" id="cheque" name="cheque_payment">
+                        <label for="cheque"> Cheque</label><br>
+                        <input type="checkbox" id="demandDraft" name="demandDraft_payment">
+                        <label for="demandDraft"> Demand Draft</label><br>
+                    </div>
+                </div>
+                <div class="input_item">
+                    <label for="ddCheque">DD/Cheque No.</label>
+                    <input type="text" id="ddCheque" name="ddChequeNo" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item">
+                    <label for="drawn_on">Drawn On(Bank Name)</label>
+                    <input type="text" id="drawn_on" name="drawnOn" pattern="[A-Za-z]">
+                </div>
+                <div class="input_item">
+                    <label for="payable_at">Payable at</label>
+                    <input type="text" id="payable_at" name="payable" pattern="[A-Za-z]">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+             <footer class="footer">
+                <button type="submit">Submit</button>
+                <button>Reset</button>
+            </footer>
+        </div>
+
+        
+    </form>
+</body>
+
+</html>

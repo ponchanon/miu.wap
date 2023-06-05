@@ -1,0 +1,85 @@
+body{font-family : Arial, "Arial Black", Verdana, "Trebuchet MS", Georgia, Tahoma, CourierNew, "Times New Roman", sans-serif;}
+
+header{
+    display: flex;
+    background-color: #3e5d67;
+}
+
+.headerdropDown{
+    
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    margin-top: 25px;
+    margin-left: 25px;
+    
+}
+
+.main {
+    display: flex;
+    padding: 5px 5px;
+    border: 5px
+}
+
+#leftDivContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 65px 5px 2px;
+}
+
+#rightDivContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 65px 5px 2px;
+}
+
+.input_item {
+    font-size: 12px;
+    margin-top: 15px;
+}
+.input_item > input, textarea {
+    float: right;
+}
+
+#address {
+    width: 164px;
+    height: 75px;
+}
+
+#state_prov, #country_name, #meal_prefer {
+    float: right;
+    width: 172px;
+}
+.div_checkbox{
+    float: right;
+    margin-right: 50px;
+}
+#div_check {
+    height: 60px;
+}
+
+.required {
+    color: red;
+    margin-left: 3px;
+}
+
+.footer {
+    background: #3e5d67;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+.footer button {
+    background-color: #34BFCD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 15px;
+}
+
+label{
+    font-weight: bold;
+}
