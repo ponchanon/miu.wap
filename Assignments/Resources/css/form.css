@@ -137,7 +137,7 @@
 }
 
 .name_section label > span {
-  position: absolute;
+  /* position: absolute; */
   padding-top: 5px;
   font-weight: bold;
   width: 50%;
@@ -154,4 +154,20 @@
 
 .fieldSetGroup{
   margin-bottom: 3em;
+}
+
+/*Footer Deesign*/
+.checker_section{
+  float: left;
+}
+
+.checker_section .html_css_class {
+  display: inline-block;
+  margin: 1em;
+}
+
+.html_css_class img {
+  width: 100px;
+  border: 2px solid #0c0;
+  border-radius: 10px;
 }
