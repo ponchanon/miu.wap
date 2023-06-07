@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../Resources/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="../Resources/css/ec.css" type="text/css" rel="stylesheet" />
+    <script src="../Resources/js/ec.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Exercise 01 -->
+    <div class="codeBlock">
+        <h3 class="exercise">Exercise 01</h3>
+        <pre>function b() {
+            const y = 30;
+            a();
+            function a() {
+                console.log(x, y);
+            }
+            var x = 10;
+            console.log(x, y);
+        }
+        const x = 20;
+        var y = 40;
+        b();</pre>
+        <br>
+
+        <pre><h4 class="output">Console Output:</h4>undefined 30
+    10 30</pre>
+    </div>
+
+    <!-- Exercise 02 -->
+    <div class="codeBlock">
+        <h3 class="exercise">Exercise 02</h3>
+        <pre>function foo(x) {
+        let m;
+        console.log(x, y);
+        if (x > 5) {
+            var y = 5;
+            m = x + y;
+        } else {
+            let z = 10;
+            m = z;
+        }
+        x = m;
+        console.log(x, y);
+    }
+    var x = 10;
+    foo(3);
+    console.log(x);</pre>
+        <br>
+        <pre><h4 class="output">Console Output:</h4>3 undefined
+    10 undefined
+    10</pre>
+    </div>
+
+    <!-- Exercise 03 -->
+    <div class="codeBlock">
+        <h3 class="exercise">Exercise 02</h3>
+        <pre>Write a function printNumbers(from, to) that outputs a number every second, 
+            starting from from and ending with to</pre>
+        <br>
+        <pre><h4 class="output">Solution:</h4>function printNumbers(from, to) {
+    let start = from;
+    console.log(`Printing from ${from} to ${to}`);
+    const intervalId = setInterval(() => {
+        console.log(start++);
+        if (start > to) {
+            //start=from; //this will help for continuous run 
+            clearInterval(intervalId);
+        }
+    }, 1000);
+}
+// Calling the function to test the program
+printNumbers(25, 33);</pre>
+    </div>
+
+    <footer>
+        <div class="checker_section">
+          <div class="html_css_class">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fponchanon.github.io%2Fmiu.wap%2FAssignments%2Flab06%2FecProb.html">
+              <img alt="html-checker" src="../Resources/Images/html_checker.png">
+            </a>
+          </div>
+          <div class="html_css_class">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fponchanon.github.io%2Fmiu.wap%2FAssignments%2Flab06%2FecProb.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+              <img alt="css-checker" src="../Resources/Images/css_checker.png">
+            </a>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
