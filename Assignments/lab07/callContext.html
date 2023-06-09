@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Resources/css/callContext.css" type="text/css" rel="stylesheet">
     <link href="../Resources/css/footer.css" type="text/css" rel="stylesheet">
+    <script src="../Resources/js/callContext.js"></script>
     <title>Document</title>
 </head>
 <body>
+  <div class="labTitle">
+    <h1>Lab 07 (Call Context)</h1>
+</div>
+<!-- Exercise 01 -->
+<div class="codeBlock">
+    <h3 class="exercise">Exercise 01</h3>
+    <img src="../Resources/Images/Lab08Q1.png" alt="Lab08-Q1">
+    <br>
+
+    <h4 class="output">Corrected Code (marked line):</h4><pre>askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+
+</pre>
+</div>
+
+<!-- Exercise 02 -->
+<div class="codeBlock">
+    <h3 class="exercise">Exercise 02</h3>
+    <pre>Question 2: Fix the code below using bind
+  let group = {
+    title: "Our Group",
+    students: ["John", "Pete", "Alice"],
+    showList: function() {
+      this.students.forEach(function(student) {
+        console.log(this.title + ": " + student
+      );
+    });
+    }
+  };
+      group.showList();</pre>
+    <br><br><br><br><br><br><br><br>
+    <h4 class="output">Corrected Code:</h4><pre>let group = {
+      title: "Our Group",
+      students: ["John", "Pete", "Alice"],
+      showList: function () {
+          this.students.forEach(function (student) {
+              console.log(this.title + ": " + student
+              );
+          }.<b>bind(this)</b>);
+      }
+  };
+  group.showList();</pre>
+</div>
+
+
     <footer>
         <div class="checker_section">
           <div class="html_css_class">
