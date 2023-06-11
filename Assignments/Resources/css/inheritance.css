@@ -1,0 +1,27 @@
+.labTitle{
+    display: block;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.codeBlock{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.exercise{
+    text-decoration: underline;
+    background-color:paleturquoise;
+}
+
+.output{
+    text-decoration: underline;
+    background-color: bisque;
+}
+
+b{
+    background-color: yellowgreen;
+}

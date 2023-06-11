@@ -31,18 +31,23 @@
   </div>
 
   <script>
-    const user = {
-      fname: "Josh",
-        greet: function () {
-          //here
-        function setName(fame) {
-          this.fname = fname;
-        }
-        this.setName('Edward');
+    const x = 10;
+    function b() {
+      let x = 1;
+      function a(x) {
+        console.log('1');
+        let y = 3;
+        x = 20;
       }
-    };
-    user.greet();
-    console.log(user.fname);
+      return a;
+    }
+    let a = function (x) {
+      console.log('2');
+      console.log(x);
+    }
+    //console.log(a);
+    const g = b(1);
+    g(2);
   </script>
 
 </body>
