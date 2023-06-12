@@ -1,0 +1,54 @@
+.heading {
+    font-family: 'Odibee Sans', cursive;
+    color:#38bdf8 ;
+    font-size: 5em;
+}
+
+.header{
+    border-bottom: 1px solid #f8fafc0f;
+}
+.form-control{
+    color: #fff;
+
+    background-color: #0000;
+    border: 2px solid #38bdf830;
+
+}
+
+p {
+    color: #fff;
+}
+
+.form-control:focus {
+    color: #ffffff;
+    background-color: #0f172a;
+    border-color: #86b7fe80;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+.music-box{
+    padding: 50px !important;
+    border-radius: 6px;
+}
+
+table{
+    margin-bottom: 0px !important;
+}
+
+.targetpointer {
+    cursor: pointer;
+ }
+
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+    .music-layer {
+        margin: -80px 0px;
+    }
