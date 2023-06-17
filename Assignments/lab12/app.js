@@ -1,28 +1,24 @@
-const express = require('express');
-const productRouter = require('./app');
-//const productRouter = require('./routes/product');
-const userRouter = require('./routes/users');
-
+const express = require("express");
+const productRouter = require('./routes/productRouter');
+const userRouter = require('./routes/userRoute');
 const path = require('path');
+
 const app = express();
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.enable("case sensitive routing");
 
-app.use('/products', productRouter);
-app.use('/users', userRouter);
+app.use(express.static(path.join(__dirname)));
 
-app.use('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
+
+app.use("/products",productRouter);
+app.use("/user",userRouter);
 
 app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+  res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
 app.use(function(err, req, res, next) {
-    res.status(500).send('Something broke!');
+  res.status(500).send('Internal Error');
 });
 
-
-app.listen(3000, () => console.log('listening on 3000...'));
+app.listen(3000, () => console.log("Listening on 3000"));

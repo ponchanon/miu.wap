@@ -1,16 +1,394 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <script src="/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../resources/css/user.css" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="container">
-        User page called
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase mb-0">Manage Users</h5>
+            </div>
+            <div class="table-responsive">
+              <table class="table no-wrap user-table mb-0">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium pl-4"
+                    >
+                      #
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Name
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Occupation
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Email
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Added
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Category
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Manage
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="pl-4">1</td>
+                    <td>
+                      <h5 class="font-medium mb-0">Ponchanon D Rone</h5>
+                      <span class="text-muted">IOWA, Unitedd states</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">7 jan 1989</span><br />
+                      <span class="text-muted">10: 44 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4">2</td>
+                    <td>
+                      <h5 class="font-medium mb-0">John Smith</h5>
+                      <span class="text-muted">Texas, Unitedd states</span>
+                    </td>
+                    <td>
+                   <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">13 Mar 1845</span><br />
+                      <span class="text-muted">10: 20 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4">3</td>
+                    <td>
+                      <h5 class="font-medium mb-0">Smith Johnson</h5>
+                      <span class="text-muted">IOWA, Unitedd states</span>
+                    </td>
+                    <td>
+                     <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">12 Aug 1985</span><br />
+                      <span class="text-muted">12: 40 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4">4</td>
+                    <td>
+                      <h5 class="font-medium mb-0">Michel Williams</h5>
+                      <span class="text-muted">Texas, Unitedd states</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">23 Mar 1998</span><br />
+                      <span class="text-muted">10: 35 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4">5</td>
+                    <td>
+                      <h5 class="font-medium mb-0">Sara Kotlin</h5>
+                      <span class="text-muted">IOWA, Unitedd states</span>
+                    </td>
+                    <td>
+                     <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">16 Aug 2001</span><br />
+                      <span class="text-muted">10: 55 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pl-4">6</td>
+                    <td>
+                      <h5 class="font-medium mb-0">Kate williams</h5>
+                      <span class="text-muted">IOWA, Unitedd states</span>
+                    </td>
+                    <td>
+                     <span class="text-muted">Student</span><br />
+                      <span class="text-muted">Past : Professor</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">ponchanondatta.rone@miu.edu</span><br />
+                      <span class="text-muted">641-33-9999</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">12 Mar 1984</span><br />
+                      <span class="text-muted">10: 25 AM</span>
+                    </td>
+                    <td>
+                      <select
+                        class="form-control category-select"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Modulator</option>
+                        <option>Admin</option>
+                        <option>User</option>
+                        <option>Subscriber</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle"
+                      >
+                        <i class="fa fa-key"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                      >
+                        <i class="fa fa-upload"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
