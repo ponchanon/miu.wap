@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+
+            document.getElementById('btn').onclick = function () {
+                const studentId = document.getElementById('stuId').value;
+                if (!studentId) {
+                    alert('Please provide student ID');
+                } else {
+                    const semester = document.getElementById('semester').value;
+                    let url = `http://localhost:3000/students/${studentId}/getAverage`;
+                    if (semester) {
+                        url += `?semester=${semester}`
+                    }
+                    fetch(url)
+                        .then(res => res.json())
+                        .then(data => {
+                            if(data.average) {
+                                document.getElementById('result').innerHTML = `Average: ${data.average}`;
+                            } else {
+                                document.getElementById('result').innerHTML = `Average: ${data.error}`;
+                            }              
+                        })
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Enter StudetID: <input id="stuId" /></p>
+    <p>Enter Semester: <input id="semester" /></p>
+    <p><button id="btn">Submit</button></p>
+    <div id="result"></div>
+</body>
+
+</html>
